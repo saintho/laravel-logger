@@ -99,7 +99,7 @@ class SqlLogger
      * @param mixed $bindings
      * @param mixed $time
      */
-    public function log($query, $bindings, $time)
+    public function log($query, $bindings, $time = '')
     {
         static $queryNr = 0;
 
@@ -134,14 +134,14 @@ class SqlLogger
 
         // save normal query to file if enabled
         if ($this->logStatus) {
-            $this->saveLog($data, date('Y-m-d') . $filePrefix . '-log.sql',
+            $this->saveLog($data, date('Y-m-d') . $filePrefix . '-log.log',
                 ($queryNr == 1 && (bool)$this->override));
         }
 
         // save slow query to file if enabled
         if ($this->slowLogStatus && $execTime >= $this->slowLogTime) {
             $this->saveLog($data,
-                date('Y-m-d') . $filePrefix . '-slow-log.sql');
+                date('Y-m-d') . $filePrefix . '-slow-log.log');
         }
     }
 
