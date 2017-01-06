@@ -1,0 +1,21 @@
+{
+    "name": "meijiabang/laravel-logger",
+    "description": "Log SQL/Cache queries in Laravel/Lumen framework",
+    "keywords": ["laravel", "sql", "cahce", "log", "logger", "lumen"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "meijiabang",
+            "email": "meijiabang@meijiabang.cn"
+        }
+    ],
+    "require": {
+        "illuminate/support": "5.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Meijiabang\\LaravelLogger\\": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
