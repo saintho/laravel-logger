@@ -6,7 +6,7 @@
  * Time: 11:26 AM
  */
 
-namespace Mnabialek\LaravelSqlLogger;
+namespace saint\LaravelSqlLogger;
 
 
 class MemCacheLogger

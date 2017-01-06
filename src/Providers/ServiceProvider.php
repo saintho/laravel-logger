@@ -1,8 +1,8 @@
 <?php
 
-namespace Meijiabang\LaravelLogger\Providers;
+namespace saint\LaravelLogger\Providers;
 
-use Meijiabang\LaravelLogger\SqlLogger;
+use saint\LaravelLogger\SqlLogger;
 
 class ServiceProvider extends \Illuminate\Support\ServiceProvider
 {

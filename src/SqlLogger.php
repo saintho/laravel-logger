@@ -1,6 +1,6 @@
 <?php
 
-namespace Meijiabang\LaravelLogger\SqlLogger;
+namespace saint\LaravelLogger;
 
 class SqlLogger
 {
